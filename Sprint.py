@@ -6,7 +6,9 @@ if pesoLixo <= 8:
     pontos = pesoLixo * 1000
     print(f"Você ganhou {pontos} pontos!")
 else:
-    print("Não é permitido adicionar um peso maior que 8 quilogramas.")
+    pontos = 8000
+    print("Você depositou mais de 8kg, portanto os quilos que você depositou a mais não serão substituidos por pontos.")
+    print("Você ganhou 8000 pontos!")
 
 #verifica se o usuário já tem pode resgatar algum prêmio e então pergunta se ele está interessado em resgatar algum
 if pontos >= 1500:
